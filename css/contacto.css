@@ -1,0 +1,427 @@
+
+#contenedor2{
+    background: #ffffff;
+    height: 20px;
+    width: 100%;
+    border: 4px solid rgb(134, 190, 30);
+    
+
+}
+  
+
+#contacto{
+    
+    margin: 0 auto;
+    width: 900px;
+    height: auto;
+    padding: 0px;
+    display: block;
+    display: flex;
+    max-width: 100%;
+    padding-top: 25px;
+    background: rgb(255, 254, 254);
+    margin-top: 8%;
+    
+}
+/*mapa*/
+#categorias{
+    margin: 0 auto;
+    width: 900px;
+    height: auto;
+    padding: 10px;
+    display: block;
+    display: flex;
+    max-width: 100%;
+    float: center;
+    background: rgb(216, 216, 216);
+    margin-top: 1%;
+    border-radius: 25px;
+    
+}
+iframe{
+    width: 1000px;
+    height: 530px;
+    margin:  auto;
+    display: block;
+    
+}
+h1{
+    width: 100%;
+    margin-left: 20px;
+    
+}
+#footer{
+    width: 100%;
+    height: 100%;
+    margin:  auto;
+    display: block;
+    margin-top: 2%;
+    border: 0px solid rgb(134, 190, 30);
+    max-width: 100%;
+}
+
+
+/* foter de redes sociales*/
+.footer-copy-redes {
+    width: 100%;
+    background: #000;
+    border-top: 3px solid rgb(2, 6, 252);
+}
+
+.main-copy-redes {
+    width: 98%;
+    max-width: 1000px;
+    padding: 15px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.main-copy-redes .footer-copy {
+    width: 70%;
+    color: #fff;
+}
+
+.main-copy-redes .footer-redes {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.main-copy-redes .footer-redes a {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius:50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+@media screen  and (max-width: 6750px) {
+    .info-main {
+        padding: 30px 100px;
+    }
+
+    .footer-main .footer-columna {
+        padding: 0 10px;
+    }
+
+    .footer-main .footer-columna h3 {
+        font-size: 28px;
+    }
+
+    .footer-main .footer-columna p {
+        font-size: 14px;
+    }
+}
+
+@media screen  and (max-width: 640px) {
+    .info-main {
+        padding: 30px 30px;
+    }
+
+    .info-main h3 {
+        font-size: 30px;
+    }
+
+    .footer-main {
+        padding: 10px 0;
+    }
+
+    .footer-main .footer-columna {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-main .footer-columna h3 {
+        margin-bottom: 5px;
+    }
+
+    .footer-main .footer-columna span {
+        display: block;
+    }
+    
+    .main-copy-redes .footer-copy {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-copy-redes .footer-redes {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*formulario del contacto*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+  }
+  
+  :focus{
+      outline: none;
+  }
+  
+  body{
+      width: 100%;
+      background: rgb(253, 251, 251);
+      font-family: 'Open sans';
+      
+      
+  }
+  
+  /* FORMULARIO caja arriba=================================== */
+  
+  .form_wrap{
+      width: 1050px;
+      height: 600px;
+      margin: 20px;
+      margin-left: 0px;
+      margin-right: 0%;
+      display: block;
+  
+      background: rgb(224, 223, 223);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      
+  }
+  
+  /* Informacion de Contacto caja abajo*/
+  .cantact_info::before{
+      content: '';
+      width: 100%;
+      height: 100%;
+  
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      background: #4091EC;
+      opacity: 0.9;
+      
+  }
+  
+  .cantact_info{
+      width: 100%;
+      height: 120px;
+      position: relative;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: left;
+      
+  
+      background-image: url('../fondo.jpg');
+      background-size: cover;
+      background-position: center center;
+  
+  }
+  
+  .info_title,
+  .info_items{
+      position: relative;
+      border: 0px solid rgb(134, 190, 30);
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      
+      display: block;
+      padding-left: 10px;
+      
+  }
+  
+  .info_title{
+      margin-bottom: 9px;
+      text-align: center; 
+      padding: right 4%;
+      border: 0px solid rgb(143, 78, 12);
+      width: 50%;
+      inline-size: 360px;
+      display: block;
+      top: 12%;
+  }
+  
+  .info_title span{
+      font-size: 100px;
+      display: block;
+      text-align: left;
+      margin-bottom: 12px;
+      
+  }
+  
+  .info_title h2{
+      font-size: 22px;
+      margin-top: 8%;
+      
+      
+  }
+  
+  .info_items p{
+      display: inline;
+      align-items: center;
+  
+      font-size: 12px;
+      font-weight: 600;
+          
+      
+  }
+  
+  .info_items p:nth-child(1) span{
+      font-size: 30px;
+      margin-right: 10px;
+  }
+  
+  .info_items p:nth-child(2) span{
+      font-size: 40px;
+      margin-right: 15px;
+      margin-left: 4px;
+  }
+  
+  
+  /* Formulario de contacto*/
+  form.form_contact{
+      width: 100%;
+      padding: 30px 40px;
+  }
+  
+  form.form_contact h2{
+      font-size: 25px;
+      font-weight: 600;
+      color: #303030;
+      margin-bottom: 30px;
+  }
+  
+  form.form_contact .user_info{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  form.form_contact label{
+      font-weight: 600;
+  }
+  
+  form.form_contact input,
+  form.form_contact textarea{
+      width: 100%;
+      padding: 8px 0px 5px;
+      margin-bottom: 20px;
+  
+      border: none;
+      border-bottom: 2px solid #D1D1D1;
+  
+      font-family: 'Open sans';
+      color: #5A5A5A;
+      font-size: 14px;
+      font-weight: 400;
+  }
+  
+  form.form_contact textarea{
+      max-width: 100%;
+      min-width: 100%;
+      max-height: 90px;
+  }
+  
+  form.form_contact input[type="button"]{
+      width: 180px;
+      background: #4091EC;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+  
+      align-self: flex-end;
+  
+      color: #fff;
+      font-family: 'Open sans';
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+  }
+  
+  form.form_contact input[type="button"]:hover{
+      background: #3371B6;
+  }
+  
+  /* Ventana de errores*/
+  .modal_wrap{
+      width: 100%;
+      height: 100vh;
+      background: rgba(0,0,0,0.7);
+  
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 3;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .mensaje_modal{
+      background: #fff;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+      width: 400px;
+      padding: 30px 20px 15px;
+  }
+  
+  .mensaje_modal h3{
+      text-align: center;
+      font-family: 'Ubuntu';
+      font-size: 20px;
+      font-weight: 400;
+  }
+  
+  .mensaje_modal h3:after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #C5C5C5;
+      margin: 10px 0px 15px;
+  }
+  
+  .mensaje_modal p{
+      font-size: 16px;
+      color: #606060;
+  }
+  
+  .mensaje_modal p:before{
+      content: "\f00d";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #E25151;
+      margin-right: 8px;
+  }
+  
+  #btnClose{
+      display: inline-block;
+      padding: 3px 10px;
+      margin-top: 10px;
+  
+      background: #E25151;
+      color: #fff;
+      border: 2px solid #B14141;
+      cursor: pointer;
+  
+      
+  }
